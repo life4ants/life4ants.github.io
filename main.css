@@ -2,3 +2,7 @@ body{
   width: 700px;
   background-color: green;
 }
+
+h1{
+  text-align: center;
+}
