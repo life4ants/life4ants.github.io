@@ -51,15 +51,15 @@ p{
 }
 
 #matchgame{
-  background-image: url("images/matchgame.png");
+  background-image: url("images/matchgame.jpg");
   background-size: 74%;
 }
 
 #invasion{
-  background-image: url("images/invasion.png");
+  background-image: url("images/invasion.jpg");
   background-size: 91%;
 }
 #resume{
-  background-image: url("images/resume.png");
+  background-image: url("images/resume.jpg");
   background-size: 51%;
 }
