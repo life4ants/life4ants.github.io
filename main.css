@@ -1,25 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Caveat+Brush');
+
 body{
-  max-width: 900px;
+  max-width: 1000px;
   background-color: #ffc;
   margin: auto;
   padding: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-}
-
-h1{
-  text-align: center;
-  background-color: #18b84a;
-  padding: 5px;
-  border-radius: 20px;
+  font-family: "Droid Sans", sans-serif;
 }
 
 p{
   text-align: center;
 }
 
+/*    title and picture:  */
+.top{
+  display: flex;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#profile-pic{
+  flex: 2 0;
+}
+
+#profile-pic img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+#spacer{
+  flex: 1;
+}
+
+#title {
+  font-family: 'Caveat Brush', cursive;
+  padding: 5px;
+  margin-top: 50px;
+  flex: 3;
+}
+
+#title h1{
+  font-size: 55px;
+  margin: 0px;
+}
+
+#title p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+@media(max-width: 500px) {
+
+  #profile-pic {
+    margin-top: 20px;
+  }
+
+  .top{
+    flex-direction: column;
+  }
+
+}
+
+
+/*      links:    */
 .links-box{
   display: flex;
   justify-content: space-around;
@@ -47,6 +92,7 @@ p{
 
 .links-box a span{
   background-color: #eef;
+  padding: 3px;
   border-radius: 2px;
 }
 
@@ -57,7 +103,7 @@ p{
 
 #invasion{
   background-image: url("images/invasion.jpg");
-  background-size: 91%;
+  background-size: 88%;
 }
 #resume{
   background-image: url("images/resume.jpg");
