@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/05b87e31dd.js"></script>
+    <script src='src/modernizr.js'></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" href="main.css" type="text/css">
+	  <link rel="stylesheet" href="/src/build/style.min.css" type="text/css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" id='container'>
       <header>
         <div id="spacer"></div>
         <div id="title">
@@ -17,19 +18,25 @@
           <p>Junior Web Developer</p>
         </div>
         <div id="profile-pic">
-          <a href="/images/me.jpg"><img src="images/me.jpg" alt="A picture of Andrew Buck"></a>
+          <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
         </div>
       </header>
       <div class="content">
         <p>
-          Greetings and Salutations! I'm Andy, a junior web developer based out of Northern Indiana, USA.
+          Greetings and Salutations! I'm Andy Buck, a junior web developer based out of Northern Indiana, USA.
         </p>
         <div class="links-box">
-          <a href="/matchgame" id="matchgame"><span>Play my Match game here</span></a>
-          <a href='/invasion' id="invasion"><span>Play my Invasion game here</span></a>
-      	  <a href='/images/abuck_webdeveloper.pdf' id="resume"><span>Click here for my Resumé</span></a>
+          <div id="matchgame">
+            <a href="/matchgame"><span>Play my Match game here</span></a>
+          </div>
+          <div id="invasion">
+            <a href='/invasion'><span>Play my Invasion game here</span></a>
+          </div>
+      	  <div id="resume">
+            <a href='/images/abuck_webdeveloper.pdf'><span>Click here for my Resumé</span></a>
+          </div>
         </div>
-        <p class="small">Last updated on March 8, 2017. Check back later to see my site take shape!</p>
+        <p class="small">Last updated on March 10, 2017. Check back later to see my site take shape!</p>
       </div>
       <footer>
         <a href='https://github.com/life4ants' target='_blank'>
@@ -44,4 +51,13 @@
       </footer>
     </div>
   </body>
+  <script>
+    if (!Modernizr.cssvhunit){
+      document.getElementById('container').style.minHeight = window.innerHeight + "px";
+      window.onresize = function(){
+        document.getElementById('container').style.minHeight = window.innerHeight + "px";
+      };
+    }
+  </script>
+  <!-- <script src="http://192.168.1.5:8080/target/target-script-min.js#anonymous"></script> -->
 </html>
