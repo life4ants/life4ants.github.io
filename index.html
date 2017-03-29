@@ -16,6 +16,8 @@
         <div id="title">
           <h1>Andrew Buck</h1>
           <p>Junior Web Developer</p>
+          <a href='mailto:life4ants@yahoo.com'>Email</a>&emsp;
+          <a href="/src/images/resume.jpg">Resumé</a>
         </div>
         <div id="profile-pic">
           <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
@@ -24,31 +26,74 @@
       <h2 id='project-header'>Projects:</h2>
       <div class="content">
         <ul class="projects">
-          <li>
-            <h2><a href="/matchgame" >Match Game</a></h2>
-            <div>
-            <img src="/src/images/matchgame.jpg" alt="matchgame thumbnail" >
-            <p>A game I made when I was first learning Javascript. The code is not that great, but it works. </p>
-            </div>
-
-          </li>
-          <li >
-            <h2><a href="/invasion">Invasion Game</a></h2>
-            <div>
-              <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
-              <p>A game based on Risk, played on a map of North America. 90 territories, up to 8 players, including AI players. Built entirely in Javascript, with all the code in one big file.</p>
-            </div>
-          </li>
-          <li >
+          <li class='project'>
             <h2><a href="/conquest">Conquest Game</a></h2>
             <div>
-              <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
-              <p>A combat game based also played on a map of North America. Unfortunately it was planned poorly. I didn't really decide the rules, goal of game, etc ahead of time. If you can ever finish it without dying of boredom, you will find that I never coded an ending. However, it's a fine display of my React skills!
-              </p>
+              <div id='img-wrapper'>
+                <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
+              </div>
+              <ul>
+                <li>
+                  <h3>Description:</h3>
+                  <p>A combat game played on a map of North America. Built with React.js and Twitter Bootstrap</p>
+                </li>
+                <li>
+                  <h3>Pros:</h3>
+                  <p>Beautiful design, ease of use. Great UX. Good display of my skills.</p>
+                </li>
+                <li>
+                  <h3>Cons:</h3>
+                  <p>The Game itself is boring and pointless.</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class='project'>
+            <h2><a href="/invasion">Invasion Game</a></h2>
+            <div>
+              <div id='img-wrapper'>
+                <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
+              </div>
+              <ul>
+                <li>
+                  <h3>Description:</h3>
+                  <p>A game based on Risk, played on a map of North America. 90 territories, up to 8 players, including AI players. Built entirely in plain old Javascript, HTML, and CSS.</p>
+                </li>
+                <li>
+                  <h3>Pros:</h3>
+                  <p>Fun, functional game with a lot of conplex code.</p>
+                </li>
+                <li>
+                  <h3>Cons:</h3>
+                  <p>All the code is in one big file. Not reuseable or transferable to another framework.</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class='project'>
+            <h2><a href="/matchgame" >Match Game</a></h2>
+            <div>
+              <div id='img-wrapper'>
+                <img src="/src/images/matchgame.jpg" alt="matchgame thumbnail" >
+              </div>
+              <ul>
+                <li>
+                  <h3>Description:</h3>
+                  <p>A simple little memory game - flip over cards and find matching pairs. My second project ever.</p>
+                </li>
+                <li>
+                  <h3>Pros:</h3>
+                  <p>Nice card design</p>
+                </li>
+                <li>
+                  <h3>Cons:</h3>
+                  <p>Obviously coded by an amateur.</p>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
-        <p class="small">Last updated on March 28, 2017. Check back later to see my site take shape!</p>
+        <p class="small">Last updated on March 29, 2017. Check back later to see my site take shape!</p>
       </div>
       <footer>
         <a href='https://github.com/life4ants' target='_blank'>
