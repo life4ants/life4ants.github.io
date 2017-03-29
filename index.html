@@ -7,7 +7,7 @@
     <script src="https://use.fontawesome.com/05b87e31dd.js"></script>
     <script src='src/modernizr.js'></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" href="/src/build/style.min.css" type="text/css">
+	  <link rel="stylesheet" href="src/build/style.min.css" type="text/css">
   </head>
   <body>
     <div class="container" id='container'>
@@ -21,22 +21,34 @@
           <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
         </div>
       </header>
+      <h2 id='project-header'>Projects:</h2>
       <div class="content">
-        <p>
-          Greetings and Salutations! I'm Andy Buck, a junior web developer based out of Northern Indiana, USA.
-        </p>
-        <div class="links-box">
-          <div id="matchgame">
-            <a href="/matchgame"><span>Play my Match game here</span></a>
-          </div>
-          <div id="invasion">
-            <a href='/invasion'><span>Play my Invasion game here</span></a>
-          </div>
-      	  <div id="resume">
-            <a href='/images/abuck_webdeveloper.pdf'><span>Click here for my Resumé</span></a>
-          </div>
-        </div>
-        <p class="small">Last updated on March 10, 2017. Check back later to see my site take shape!</p>
+        <ul class="projects">
+          <li>
+            <h2><a href="/matchgame" >Match Game</a></h2>
+            <div>
+            <img src="/src/images/matchgame.jpg" alt="matchgame thumbnail" >
+            <p>A game I made when I was first learning Javascript. The code is not that great, but it works. </p>
+            </div>
+
+          </li>
+          <li >
+            <h2><a href="/invasion">Invasion Game</a></h2>
+            <div>
+              <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
+              <p>A game based on Risk, played on a map of North America. 90 territories, up to 8 players, including AI players. Built intirely in Javascript, with all the code in one big file.</p>
+            </div>
+          </li>
+          <li >
+            <h2><a href="/conquest">Conquest Game</a></h2>
+            <div>
+              <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
+              <p>A combat game based also played on a map of North America. Unfortunately it was planned poorly. I didn't really decide the rules, goal of game, etc ahead of time. If you can ever finish it without dying of boredom, you will find that I never coded an ending. However, it's a fine display of my React skills!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <p class="small">Last updated on March 28, 2017. Check back later to see my site take shape!</p>
       </div>
       <footer>
         <a href='https://github.com/life4ants' target='_blank'>
