@@ -16,7 +16,7 @@ gulp.task('default', function(){
 
 gulp.task('dev', function () {
   var scss = gulp.src('src/css/*.scss')
-    .pipe(sass());
+    .pipe(sass().on('error', sass.logError));
 
   const css = gulp.src('src/css/*.css');
 
@@ -29,7 +29,7 @@ gulp.task('dev', function () {
 
 gulp.task('publish', function () {
   var scss = gulp.src('src/css/*.scss')
-    .pipe(sass());
+    .pipe(sass().on('error', sass.logError));
 
   const css = gulp.src('src/css/*.css');
 
