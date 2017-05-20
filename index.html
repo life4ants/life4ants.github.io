@@ -5,108 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/05b87e31dd.js"></script>
-    <script src='src/modernizr.js'></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" href="src/build/style.min.css" type="text/css">
+    <script src='build/modernizr.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="build/style.min.css" type="text/css">
+    <script src="src/main.js"> </script>
   </head>
   <body>
-    <div class="container" id='container'>
-      <header>
-        <div id="spacer"></div>
-        <div id="title">
-          <h1>Andrew Buck</h1>
-          <p>Junior Web Developer</p>
-          <a href='mailto:life4ants@yahoo.com'>Email</a>&emsp;
-          <a href="/src/images/abuck_webdeveloper.pdf">Resumé</a>
-        </div>
-        <div id="profile-pic">
-          <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
-        </div>
-      </header>
-      <h2 id='project-header'>Projects:</h2>
-      <div class="content">
-        <ul class="projects">
-          <li class='project'>
-            <h2><a href="/conquest">Conquest Game</a></h2>
-            <div>
-              <div id='img-wrapper'>
-                <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
-              </div>
-              <ul>
-                <li>
-                  <h3>Description:</h3>
-                  <p>A combat game played on a map of North America. Built with React.js and Twitter Bootstrap.</p>
-                </li>
-                <li>
-                  <h3>Pros:</h3>
-                  <p>Beautiful design, ease of use. Great UX. Good display of my skills.</p>
-                </li>
-                <li>
-                  <h3>Cons:</h3>
-                  <p>The game itself is boring and pointless.</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class='project'>
-            <h2><a href="/invasion">Invasion Game</a></h2>
-            <div>
-              <div id='img-wrapper'>
-                <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
-              </div>
-              <ul>
-                <li>
-                  <h3>Description:</h3>
-                  <p>A game based on Risk, played on a map of North America. 90 territories with up to 8 players, including AI players. Built entirely in plain old Javascript, HTML, and CSS.</p>
-                </li>
-                <li>
-                  <h3>Pros:</h3>
-                  <p>Fun, functional game with a lot of conplex code.</p>
-                </li>
-                <li>
-                  <h3>Cons:</h3>
-                  <p>Ugy graphics and user interface. The code is kind of messy - all in one big file.</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class='project'>
-            <h2><a href="/matchgame">Match Game</a></h2>
-            <div>
-              <div id='img-wrapper'>
-                <img src="/src/images/matchgame.jpg" alt="matchgame thumbnail" >
-              </div>
-              <ul>
-                <li>
-                  <h3>Description:</h3>
-                  <p>A simple little memory game - flip over cards and find matching pairs. My second project ever.</p>
-                </li>
-                <li>
-                  <h3>Pros:</h3>
-                  <p>Nice card design.</p>
-                </li>
-                <li>
-                  <h3>Cons:</h3>
-                  <p>Obviously coded by an amateur.</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <p class="small">Last updated on April 1, 2017. Check back later to see my site take shape!</p>
+    <nav>
+      <div class="nav-content">
+        <a href="#landing" id="landingTab" class="tab active">Home</a>
+        <a href="#about" id="aboutTab" class="tab">About</a>
+        <a href="#projects" id="projectsTab" class="tab">Projects</a>
+        <a href="#contact" id="contactTab" class="tab">Contact</a>
       </div>
-      <footer>
-        <a href='https://github.com/life4ants' target='_blank'>
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a href='https://www.linkedin.com/in/andrew-buck-56170a137' target='_blank'>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href='mailto:life4ants@yahoo.com'>
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-      </footer>
-    </div>
+    </nav>
+    <main>
+      <a class="anchor" id="landing"></a>
+      <section class="landing">
+        <div class="inner-section">
+          <h1 id="title">Andrew Buck</h1>
+          <h4 id="subtitle">Front End Web Developer</h4>
+        </div>
+      </section>
+      <a class="anchor" id="about"></a>
+      <section class="about">
+        <div class="inner-section">
+          <div id="profile-pic">
+            <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
+          </div>
+          <h2>About Me</h2>
+          <p>Hello, I'm Andrew Buck. I'm a self-taught web develper who currently lives in the state of Indiana, USA, with a passion for making simple yet elegant websites.</p>
+          <p>I am a homeschooled graduate who continues to learn everyday. Besides programming, my interests include human languages and physics.</p>
+          <p>My front-end skills include HTML, CSS, JavaScript, ES6, and JQuery.</p>
+          <p>I know both ReactJS and Vue.js, but Vue is my favorite by far. I've dabbled in angular, and might take it up again.</p>
+          <p>On the back end, I know Ruby on Rails, and I'm learning PHP/Laravel.</p>
+          <a href="/src/images/abuck_webdeveloper.pdf">See my Resumé</a>
+        </div>
+      </section>
+      <a class="anchor" id="projects"></a>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="inner-section">
+          <div class="project-wrapper">
+            <div class="project-header">React Projects</div>
+            <div class="project">
+              <h3>Conquest</h3>
+              <a href="/conquest">
+                <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-header">Vue Projects</div>
+            <div class="project">
+              <h3>Invasion-vue</h3>
+              <a href="/invasion-vue">
+                <img src='/src/images/invasion-vue.jpg' alt='invasion-vue thumbnail' >
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-header">Javascript Projects</div>
+            <div class="project">
+              <h3>Invasion</h3>
+              <a href="/invasion">
+                <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
+              </a>
+            </div>
+            <div class="project">
+              <h3>Matchgame</h3>
+              <a href="/matchgame">
+                <img src='/src/images/matchgame.jpg' alt='matchgame thumbnail' >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="anchor" id="contact"></a>
+      <section class="contact">
+        <div class="inner-section">
+          <h2>Contact Me</h2>
+          <p>I'm available for hire as well as freelance work so if there's anything that I can do for you, or if you have an idea you would like to discuss, please feel free to get in touch.</p>
+          <ul class="iconList">
+            <li>
+              <span><i class="fa fa-github" aria-hidden="true"></i></span>
+              <a href='https://github.com/life4ants' target='_blank'>life4ants</a>
+            </li>
+            <li>
+              <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+              <a href='https://www.linkedin.com/in/andrew-buck-56170a137' target='_blank'>Andrew Buck</a>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <a href='mailto:life4ants@yahoo.com'>life4ants@yahoo.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Copyright © Andrew Buck 2017. </span>
+      <span>Last updated May 19, 2017</span>
+    </footer>
   </body>
 
   <script>

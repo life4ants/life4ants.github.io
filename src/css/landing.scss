@@ -1,0 +1,66 @@
+@import "main";
+
+.landing {
+  background-color: $grey;
+  font-family: 'Caveat Brush', cursive;
+  overflow: hidden;
+
+  .inner-section {
+    padding: 80px 0px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 500px){
+  .landing h1 {
+    font-size: 95px;
+  }
+
+  .landing h4 {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 1024px){
+  .landing {
+    .inner-section {
+      height: 350px;
+      position: relative;
+      padding: 0;
+    }
+
+    h4 {
+      position: absolute;
+      width: 485px;
+      bottom: 40px;
+      right: 0;
+      font-size: 55px;
+      animation: 4s slideRight;
+    }
+    h1 {
+      position: absolute;
+      width: 430px;
+      top: 40px;
+      left: 0;
+      animation: 4s slideLeft;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% { right: 100%; }
+  20% { right: 100%; }
+  100% { right: 0; }
+}
+@keyframes slideLeft {
+  0% { left: 100%; }
+  20% { left: 100%; }
+  100% { left: 0; }
+}

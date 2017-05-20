@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Caveat+Brush');
+$bg-color: #ffc;
+$bg-dark: #ff9;
+$grey: #555;
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body{
+  background-color: $grey;
+  font-family: "Droid Sans", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding-top: 45px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+section {
+  min-height: 350px;
+}
+
+.inner-section {
+  padding: 20px;
+  max-width: 1200px;
+  overflow: auto;
+}
+
+@media(min-width: 414px){
+  .inner-section {
+    margin: 0 25px;
+  }
+}
+
+@media(min-width: 500px){
+  .inner-section {
+    margin: 0 30px;
+  }
+}
+@media(min-width: 768px){
+  .inner-section {
+    margin: 0 50px;
+  }
+}
+@media(min-width: 1300px){
+  .inner-section {
+    margin: 0 auto;
+  }
+}
