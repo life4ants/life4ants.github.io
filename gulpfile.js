@@ -14,7 +14,7 @@ gulp.task('default', function(){
   gulp.watch(['*.html', 'src/*.js'], browserSync.reload);
 });
 
-gulp.task('dev', function () {
+gulp.task('dev', function (done) {
   var scss = gulp.src('src/css/*.scss')
     .pipe(sass().on('error', sass.logError));
 
@@ -25,6 +25,7 @@ gulp.task('dev', function () {
   .pipe(prefix())
   .pipe(gulp.dest('build'))
   .pipe(browserSync.reload({stream: true}));
+  done();
 });
 
 gulp.task('publish', function () {
