@@ -1,121 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    <title>Andrew Buck | Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/05b87e31dd.js"></script>
-    <script src='src/modernizr.js'></script>
-    <script src="src/jquery-3.1.1.min.js"></script>
-    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" href="src/style.min.css" type="text/css">
-    <script src="src/main.js"> </script>
+  <head>
+    <title>Andy's Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="src/images/andysgames.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+    <link rel="stylesheet" type="text/css" href="src/skeleton.css">
   </head>
-  <body>
-    <nav>
-      <div class="nav-content">
-        <a href="#landing" id="landingTab" class="tab active">Home</a>
-        <a href="#about" id="aboutTab" class="tab">About</a>
-        <a href="#projects" id="projectsTab" class="tab">Projects</a>
-        <a href="#contact" id="contactTab" class="tab">Contact</a>
-      </div>
-    </nav>
-    <main>
-      <a class="anchor" id="landing"></a>
-      <section class="landing">
-        <div class="inner-section">
-          <h1 id="title">Andrew Buck</h1>
-          <h4 id="subtitle">Web Developer/Game designer</h4>
-        </div>
-      </section>
-      <a class="anchor" id="about"></a>
-      <section class="about">
-        <div class="inner-section">
-          <div id="profile-pic">
-            <a href="/src/images/me.jpg"><img src="src/images/me.jpg" alt="A picture of Andrew Buck"></a>
-          </div>
-          <h2>About Me</h2>
-          <p>Hello, I'm Andrew Buck. I'm a homeschooled graduate who continues to learn everyday. My interests include languages, history, physics, and economics.</p>
-          <p>I've dabbled in web development a lot as a hobby but I'm not sure if I want to seek it as a carrer. </p>
-          <p>Besides the usual HTML/CSS/JavaScript(ES6), I've worked with JQuery, Vue, React, p5.js, and Ruby on Rails.</p>
-          <p>In the last few years I've played with hardware on the most basic level, Ben Eater style. The second version of my 8-bit computer was never finished because it became too complicated to trouble shoot, but it was fun while it lasted.</p>
-          <p>My biggest project has been my Wemo Explorer game build on p5.js and Vue.js which can be found on <a href="http://andysgames.fun">Andysgames.fun</a>
-        </div>
-      </section>
-      <a class="anchor" id="projects"></a>
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="inner-section">
-          <div class="project-wrapper">
-            <div class="project-header">React Projects</div>
-            <div class="project">
-              <h3>Conquest</h3>
-              <a href="/conquest">
-                <img src='/src/images/conquest.jpg' alt='conquest thumbnail' >
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-header">Vue Projects</div>
-            <div class="project">
-              <h3>Invasion-vue</h3>
-              <a href="/invasion-vue">
-                <img src='/src/images/invasion-vue.jpg' alt='invasion-vue thumbnail' >
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-header">Javascript Projects</div>
-            <div class="project">
-              <h3>Invasion</h3>
-              <a href="/invasion">
-                <img src='/src/images/invasion.jpg' alt='invasion thumbnail' >
-              </a>
-            </div>
-            <div class="project">
-              <h3>Matchgame</h3>
-              <a href="/matchgame">
-                <img src='/src/images/matchgame.jpg' alt='matchgame thumbnail' >
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <a class="anchor" id="contact"></a>
-      <section class="contact">
-        <div class="inner-section">
-          <h2>Contact Me</h2>
-          <p>I'm not always working on any software projects, but if you have something you think might interest me or if a project you would like help on, please feel free to get in touch.</p>
-          <ul class="iconList">
-            <li>
-              <span><i class="fa fa-github" aria-hidden="true"></i></span>
-              <a href='https://github.com/life4ants' target='_blank'>life4ants</a>
-            </li>
-            <li>
-              <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-              <a href='https://www.linkedin.com/in/andrew-buck-56170a137' target='_blank'>Andrew Buck</a>
-            </li>
-            <li>
-              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-              <a href='mailto:life4ants@yahoo.com'>life4ants@yahoo.com</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <span>Copyright © Andrew Buck 2020. </span>
-      <span>Last updated Aug 10, 2020</span>
-    </footer>
-  </body>
-
-  <script>
-    if (!Modernizr.cssvhunit){
-      document.getElementById('container').style.minHeight = window.innerHeight + "px";
-      window.onresize = function(){
-        document.getElementById('container').style.minHeight = window.innerHeight + "px";
-      };
-    }
-  </script>
-  <!-- <script src="http://192.168.1.5:8080/target/target-script-min.js#anonymous"></script> -->
+<body>
+  <div class="title_bar">
+    <div class="logo_box">
+      <img id="logo" src="/src/images/logo.png">
+    </div>
+    <div class="title_box">
+      <h1 class="title">Home of Andy Buck's Games</h1>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="box">
+      <a href="/conquest">
+        <img class="tag" src="/src/images/conquest.jpg">
+      </a>
+      <p>Conquest</p>
+    </div>
+    <div class="box">
+      <a href="/invasion-vue">
+        <img class="tag" src="/src/images/invasion.jpg">
+      </a>
+      <p>Invasion</p>
+    </div>
+    <div class="box">
+      <a href="/matchgame">
+        <img class="tag" src="/src/images/matchgame.jpg">
+      </a>
+      <p>Match Game</p>
+    </div>
+    <div class="box">
+      <a href="/wemoexplorer">
+        <img class="tag" src="/src/images/wemo.jpg">
+      </a>
+      <p>Wemo Explorer</p>
+    </div>
+  </div>
+</body>
 </html>

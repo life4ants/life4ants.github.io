@@ -1,0 +1,111 @@
+
+body{
+  background-color: green;
+}
+
+
+#logo {
+  width: 80px;
+  height: auto;
+}
+.title {font-size: 18px;}
+
+@media(min-width: 320px){
+  #logo {width: 100px;}
+  .title {font-size: 24px;}
+}
+@media(min-width: 400px){
+  #logo {width: 120px;}
+  .title {font-size: 28px;}
+}
+@media(min-width: 550px){
+  #logo {width: 140px;}
+  .title {font-size: 32px;}
+}
+@media(min-width: 768px){
+  #logo {width: 150px;}
+  .title {font-size: 42px;}
+}
+@media(min-width: 1200px){
+  #logo {width: 160px;}
+  .title {font-size: 60px;}
+}
+
+
+.title_bar {
+  display: flex;
+  align-items: stretch;
+  background-color: #777;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.title_box {
+  margin: 0px 20px;
+  flex-grow: 1;
+}
+
+
+/*unique to the home page: */
+
+img.tag {
+  height: 140px;
+  width: 250px;
+  border-radius: 10px;
+  margin: 15px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  padding: 10px;
+  background-color: #555;
+  border-radius: 10px;
+  margin: 20px;
+}
+.box p{
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+}
+@media(min-width: 1000px){
+  img.tag {width: 300px; height: 168px;}
+  .box p {
+    font-size: 30px;
+  }
+}
+
+/*unique in wemo page:*/
+
+.cover {
+  background-image: url("/images/wemo_cover.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 2px 3px 3px #eee;
+  color: #111;
+}
+
+.space {
+  margin: 5px;
+}
+
+.welcome-text {
+  columns: 200px 2;
+  padding: 15px;
+}
+.welcome-text ul{
+  margin: 10px;
+  list-style: none;
+}
+
+.play-button{
+  font-size: 18px;
+  border: solid #000 1px;
+  color: #444;
+  background-color: orange;
+}
