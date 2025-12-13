@@ -10,6 +10,12 @@ body{
 }
 .title {font-size: 18px;}
 
+
+.view_count {
+  float: right;
+  font-size: 10px;
+}
+
 @media(min-width: 320px){
   #logo {width: 100px;}
   .title {font-size: 24px;}
@@ -18,15 +24,17 @@ body{
   #logo {width: 120px;}
   .title {font-size: 28px;}
 }
-@media(min-width: 550px){
+@media(min-width: 575px){
   #logo {width: 140px;}
   .title {font-size: 32px;}
+  .view_count {font-size: 12px;}
 }
 @media(min-width: 768px){
   #logo {width: 150px;}
   .title {font-size: 42px;}
 }
 @media(min-width: 1200px){
+  .view_count {font-size: 14px;}
   #logo {width: 160px;}
   .title {font-size: 60px;}
 }
@@ -76,36 +84,4 @@ img.tag {
   .box p {
     font-size: 30px;
   }
-}
-
-/*unique in wemo page:*/
-
-.cover {
-  background-image: url("/images/wemo_cover.png");
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-shadow: 2px 3px 3px #eee;
-  color: #111;
-}
-
-.space {
-  margin: 5px;
-}
-
-.welcome-text {
-  columns: 200px 2;
-  padding: 15px;
-}
-.welcome-text ul{
-  margin: 10px;
-  list-style: none;
-}
-
-.play-button{
-  font-size: 18px;
-  border: solid #000 1px;
-  color: #444;
-  background-color: orange;
 }

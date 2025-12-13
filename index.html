@@ -6,6 +6,16 @@
     <link rel="shortcut icon" href="src/images/andysgames.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="src/main.css">
     <link rel="stylesheet" type="text/css" href="src/skeleton.css">
+    <script>
+      fetch(' https://api.counterapi.dev/v2/andys-games/main-2601/up')
+          .then(response => response.json())
+          .then(result => {
+            document.getElementById('views').textContent = "Views since Dec 12, 2025: " + result.data.up_count
+          })
+          .catch(error => {
+            document.getElementById('views').textContent = "View count blocked. Please disable adblocker to see view count."
+          });
+    </script>
   </head>
 <body>
   <div class="title_bar">
@@ -14,6 +24,9 @@
     </div>
     <div class="title_box">
       <h1 class="title">Home of Andy Buck's Games</h1>
+      <div class="view_count">
+        <p id="views">Views: <i>loading</i></p>
+      </div>
     </div>
   </div>
   <div class="wrapper">
